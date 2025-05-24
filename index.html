@@ -89,13 +89,6 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-
-        /* Specific spinner for logo */
-        #logo-loading-spinner {
-            width: 40px;
-            height: 40px;
-            margin-right: 0.75rem; /* mr-3 */
-        }
     </style>
 </head>
 <body class="bg-sky-100 text-gray-800">
@@ -103,8 +96,7 @@
     <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white p-4 shadow-lg">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center">
-                <img id="labLogo" src="" alt="Li Yan's Lab" class="h-10 w-10 mr-3 rounded-full hidden">
-                <div id="logo-loading-spinner" class="loading-spinner"></div>
+                <img id="labLogo" src="https://LiYanLab.github.io/Website/Photo/Logo.jpg" alt="Li Yan's Lab Logo" class="h-10 w-10 mr-3 rounded-full">
                 <h1 class="text-2xl font-bold">Li Yan's Lab</h1>
             </div>
             <nav>
@@ -135,19 +127,20 @@
         <h2 class="text-3xl font-semibold mb-4 section-title">Research Areas</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold mb-3">1. Identification of genes associated with the development of hepatocellular carcinoma, esophageal cancer, and colorectal cancer.</h3>
-                </div>
+                <h3 class="text-xl font-semibold mb-3" data-research-area="Identification of genes associated with the development of hepatocellular carcinoma, esophageal cancer, and colorectal cancer.">1. Identification of genes associated with the development of hepatocellular carcinoma, esophageal cancer, and colorectal cancer.</h3>
+            </div>
             <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold mb-3">2. Investigation into the roles of epitranscriptomic regulations, such as RNA editing and alternative splicing, in tumor initiation and progression.</h3>
-                </div>
+                <h3 class="text-xl font-semibold mb-3" data-research-area="Investigation into the roles of epitranscriptomic regulations, such as RNA editing and alternative splicing, in tumor initiation and progression.">2. Investigation into the roles of epitranscriptomic regulations, such as RNA editing and alternative splicing, in tumor initiation and progression.</h3>
+            </div>
             <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold mb-3">3. Elucidation of regulatory mechanisms governing cancer stem cells and the tumor microenvironment (TME).</h3>
-                </div>
+                <h3 class="text-xl font-semibold mb-3" data-research-area="Elucidation of regulatory mechanisms governing cancer stem cells and the tumor microenvironment (TME).">3. Elucidation of regulatory mechanisms governing cancer stem cells and the tumor microenvironment (TME).</h3>
+            </div>
             <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold mb-3">4. Exploration of molecular mechanisms underlying liver-gut axis interactions.</h3>
-                </div>
+                <h3 class="text-xl font-semibold mb-3" data-research-area="Exploration of molecular mechanisms underlying liver-gut axis interactions.">4. Exploration of molecular mechanisms underlying liver-gut axis interactions.</h3>
+            </div>
         </div>
-    </section>
+
+        </section>
 
     <section id="members" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-xl">
         <h2 class="text-3xl font-semibold mb-4 section-title">Members</h2>
@@ -247,79 +240,66 @@
                 <p class="font-semibold text-gray-900" data-title="ADARp110 promotes hepatocellular carcinoma progression via stabilization of CD24 mRNA">ADARp110 promotes hepatocellular carcinoma progression via stabilization of CD24 mRNA</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Sun L, Hu P, Yang H, Ren J, Hu R, Wu S, Wang Y, Du Y, Zheng J, Wang F, Gao H, Yan J, Yuan YF, Guan XY, Xiao J*, Li Y*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Proc Natl Acad Sci U S A., Year: 2025, Vol/Issue/Pages: Jan 21;122(3):e2409724122. (Co-corresponding last author, CAS Zone 1 Top Journal, IF=9.4)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="ASH1L in Hepatoma Cells and Hepatic Stellate Cells Promotes Fibrosis-associated Hepatocellular Carcinoma by Modulating Tumor-associated Macrophages">ASH1L in Hepatoma Cells and Hepatic Stellate Cells Promotes Fibrosis-associated Hepatocellular Carcinoma by Modulating Tumor-associated Macrophages</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Du Y, Wu S, Xi S, Xu W, Sun L, Yan J, Gao H, Wang Y, Zheng J, Wang F, Yang H, Xie D, Chen X, Ou X, Guan XY, Li Y*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Advanced Science., Year: 2024, Vol/Issue/Pages: Oct 8:e2404756. (Corresponding author, CAS Zone 1 Top Journal, IF=14.3)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="Biologically produced and metal-organic framework delivered dual-cut CRISPR/Cas9 system for efficient gene editing and sensitized cancer therapy">Biologically produced and metal-organic framework delivered dual-cut CRISPR/Cas9 system for efficient gene editing and sensitized cancer therapy</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Yu J, Tang Mao, Zhou Z, Wei Z, Wan F, Hou S, Li Q, Li Y*, Tian L*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Acta Biomaterialia., Year: 2024, Vol/Issue/Pages: Feb 28:S1742-7061(24)00101-6. (*: Co-corresponding author, CAS Zone 1 Top Journal, IF=9.4)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="USP39 promotes hepatocellular carcinogenesis through regulating alternative splicing in cooperation with SRSF6/HNRNPC">USP39 promotes hepatocellular carcinogenesis through regulating alternative splicing in cooperation with SRSF6/HNRNPC</p>
-                <p class="text-gray-700 text-sm mt-1">Authors: Zheng J, Wu S, Tang Mao, Xi S, Wang Y, Ren J, Luo H, Hu P, Sun L, Du Y, Yang H, Wang F, Gao H, Dai Z, Ou X, Li Y*.</p>
+                <p class="text-gray-700 text-sm mt-1">Authors: Zheng J, Wu S, Tang Mao, Xi S, Wang Y, Ren J, Luo H, Hu P, Sun L, Du Y, Zheng J, Wang F, Gao H, Dai Z, Ou X, Li Y*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Cell Death & Disease., Year: 2023, Vol/Issue/Pages: Oct 11;14(10):670. (Corresponding author, CAS Zone 2 Top Journal, IF=8.1)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="UHRF1 inhibition epigenetically reprograms cancer stem cells to suppress the tumorigenic phenotype of hepatocellular carcinoma">UHRF1 inhibition epigenetically reprograms cancer stem cells to suppress the tumorigenic phenotype of hepatocellular carcinoma</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Wang Y, Hu P, Wang F, Xi S, Wu S, Sun L, Du Y, Zheng J, Yang H, Tang Mao, Gao H, Luo H, Lv Y, Yan J, Ou X, Li Y*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Cell Death & Disease., Year: 2023, Vol/Issue/Pages: Jun 28;14(6):381. (Corresponding author, CAS Zone 2 Top Journal, IF=8.1)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="RNA-Editing Enzyme ADAR1 p150 Isoform Is Critical for Germinal Center B Cell Response">RNA-Editing Enzyme ADAR1 p150 Isoform Is Critical for Germinal Center B Cell Response</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Li Y, Ruan GX, Chen W, Huang H, Zhang R, Wang J, Li Y*, Xu S, Ou X*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Journal of Immunology., Year: 2022, Vol/Issue/Pages: Aug 17;ji2200149. (*: Co-corresponding author, CAS Zone 3 Journal, IF=3.6)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
-                <p class="font-semibold text-gray-900" data-title="Elevated expression of RIT1 hyperactivates RAS/MAPK signal and sensitizes hepatocellular carcinoma to combined treatment with sorafenib and AKT inhibitor">Elevated expression of RIT1 hyperactivates RAS/MAPK signal and sensitizes hepatocellular carcinoma to combined treatment with sorafenib and AKT inhibitor</p>
+                <p class="font-semibold text-gray-900" data-title="Elevated expression of RIT1 hyperactivates RAS/MAP0K signal and sensitizes hepatocellular carcinoma to combined treatment with sorafenib and AKT inhibitor">Elevated expression of RIT1 hyperactivates RAS/MAP0K signal and sensitizes hepatocellular carcinoma to combined treatment with sorafenib and AKT inhibitor</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Sun L, Xi S, Zhou Z, Zhang F, Hu P, Cui Y, Wu S, Wang Y, Wu S, Wang Y, Du Y, Zheng J, Yang H, Chen M, Yan Q, Yu D, Shi C, Zhang Y, Xie D, Guan XY*, Li Y*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Oncogene., Year: 2022, Vol/Issue/Pages: Jan;41(5):732-744. (*: Co-corresponding last author, CAS Zone 1 Top Journal, IF=6.9)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="Lnc-RP11-536 K7.3/SOX2/HIF-1α signaling axis regulates oxaliplatin resistance in patient-derived colorectal cancer organoids">Lnc-RP11-536 K7.3/SOX2/HIF-1α signaling axis regulates oxaliplatin resistance in patient-derived colorectal cancer organoids</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Li Q, Sun H, Luo D, Gan L, Mo S, Dai W, Liang L, Yang Y, Xu M, Li J, Zheng P, Li X*, Li Y*, Wang Z*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: J Exp Clin Cancer Res., Year: 2021, Vol/Issue/Pages: Nov 5;40(1):348. (*: Co-corresponding author, CAS Zone 2 Top Journal, IF=11.4)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="Genetically Encoded and Biologically Produced All-DNA Nanomedicine Based on One-Pot Assembly of DNA Dendrimers for Targeted Gene Regulation">Genetically Encoded and Biologically Produced All-DNA Nanomedicine Based on One-Pot Assembly of DNA Dendrimers for Targeted Gene Regulation</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Lu J, Hu P, Cao L, Wei Z, Xiao F, Chen Z, Li Y*, Tian L*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Angewandte Chemie-International Edition., Year: 2021, Vol/Issue/Pages: Mar 1;60(10):5377-5385. (*: Co-corresponding author, CAS Zone 1 Top Journal, IF=16.1)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="Dual functions of STAT3 in LPS-induced angiogenesis of hepatocellular carcinoma">Dual functions of STAT3 in LPS-induced angiogenesis of hepatocellular carcinoma</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Wang Z, Yan M, Li J, Long J, Li Y*, Zhang H*.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Biochimica et Biophysica Acta-Molecular Cell Research., Year: 2019, Vol/Issue/Pages: Apr;1866(4):566-574. (*: Co-corresponding author, CAS Zone 3, IF=4.6)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="Hepatocellular Carcinoma: Transcriptome diversity regulated by RNA editing">Hepatocellular Carcinoma: Transcriptome diversity regulated by RNA editing</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Li Y, Chen L, Chan TH, Guan XY.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: International Journal of Biochemistry & Cell Biology., Year: 2013, Vol/Issue/Pages: Aug;45(8):1843-8. (First author, CAS Zone 3, IF=3.4)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="Recoding RNA editing of antizyme inhibitor 1 predisposes to hepatocellular carcinoma">Recoding RNA editing of antizyme inhibitor 1 predisposes to hepatocellular carcinoma</p>
                 <p class="text-gray-700 text-sm mt-1">Authors: Chen LL*, Li Y*, Chi HL, Liu M, Song YY, Chan TH, Yuan YF, Chow RKK, Fu L, Kong KL, Zhang N, Tong AHY, Kwong DLW, Man K, Lo CM, Lok S, Tenen DG, Guan XY.</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Nature Medicine., Year: 2013, Vol/Issue/Pages: Feb;19(2):209-16. (*: Co-first author, CAS Zone 1 Top Journal, IF=58.7)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
             <li class="mb-4 pb-4 border-b border-gray-200">
                 <p class="font-semibold text-gray-900" data-title="SPOCK1 is regulated by CHD1L and blocks apoptosis and promotes HCC cell invasiveness and metastasis in mice">SPOCK1 is regulated by CHD1L and blocks apoptosis and promotes HCC cell invasiveness and metastasis in mice</p>
                 <p class="text-gray-700 text-sm mt-1">Journal/Conference: Gastroenterology., Year: 2013, Vol/Issue/Pages: Jan;144(1):179-191. (First author, CAS Zone 1 Top Journal, IF=25.6)</p>
-                <button class="summarize-btn mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">✨Generate Abstract</button>
-            </li>
+                </li>
         </ul>
     </section>
 
@@ -360,12 +340,12 @@
     <div id="summaryModal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-button" id="closeModal">&times;</button>
-            <h3 class="text-2xl font-semibold mb-4">Publication Abstract</h3>
+            <h3 class="text-2xl font-semibold mb-4" id="modalTitle"></h3>
             <div id="summaryContent" class="text-gray-700">
                 </div>
             <div id="loadingIndicator" class="hidden text-center mt-4">
                 <div class="loading-spinner"></div>
-                <p class="text-gray-600">Generating abstract, please wait...</p>
+                <p class="text-gray-600">正在生成，请稍候...</p>
             </div>
         </div>
     </div>
@@ -374,12 +354,12 @@
         // Auto-update year
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Gemini API Integration - Abstract Generation
-        const summarizeButtons = document.querySelectorAll('.summarize-btn');
+        // Common modal elements (kept in case of future use, though currently not used)
         const summaryModal = document.getElementById('summaryModal');
         const summaryContent = document.getElementById('summaryContent');
         const loadingIndicator = document.getElementById('loadingIndicator');
         const closeModalButton = document.getElementById('closeModal');
+        const modalTitle = document.getElementById('modalTitle'); 
 
         // Close modal
         closeModalButton.addEventListener('click', () => {
@@ -390,115 +370,6 @@
             if (event.target === summaryModal) {
                 summaryModal.classList.remove('show');
             }
-        });
-
-        summarizeButtons.forEach(button => {
-            button.addEventListener('click', async (event) => {
-                const publicationTitleElement = event.target.closest('li').querySelector('[data-title]');
-                const publicationTitle = publicationTitleElement ? publicationTitleElement.dataset.title : 'Unknown Publication Title';
-
-                summaryContent.innerHTML = ''; // Clear previous content
-                loadingIndicator.classList.remove('hidden'); // Show loading spinner
-                summaryModal.classList.add('show'); // Show modal
-
-                // The prompt for the LLM remains in Chinese to ensure relevant content generation for Chinese papers
-                const prompt = `请用大约100字，以通俗易懂的语言，总结一篇关于消化道肿瘤和疾病的科研论文，其标题是：“${publicationTitle}”。请专注于其研究意义和主要发现。`;
-
-                let chatHistory = [];
-                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                const payload = { contents: chatHistory };
-                const apiKey = ""; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-                try {
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-                    const result = await response.json();
-
-                    loadingIndicator.classList.add('hidden'); // Hide loading spinner
-
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        summaryContent.innerHTML = `<p>${text}</p>`;
-                    } else {
-                        summaryContent.innerHTML = '<p class="text-red-500">Unable to generate abstract, please try again later.</p>';
-                        console.error('Gemini API returned an unexpected response structure:', result);
-                    }
-                } catch (error) {
-                    loadingIndicator.classList.add('hidden'); // Hide loading spinner
-                    summaryContent.innerHTML = '<p class="text-red-500">Request failed, please check network connection or API configuration.</p>';
-                    console.error('Error calling Gemini API:', error);
-                }
-            });
-        });
-
-        // Gemini API Integration - Image Generation (Logo)
-        async function generateAndSetLogo() {
-            const labLogo = document.getElementById('labLogo');
-            const logoSpinner = document.getElementById('logo-loading-spinner');
-
-            labLogo.classList.add('hidden'); // Hide logo initially
-            logoSpinner.classList.remove('hidden'); // Show spinner
-
-            const prompt = "scientific illustration of a human liver, simplified, clean lines, icon style, minimal detail, white background, high quality";
-            const payload = { instances: { prompt: prompt }, parameters: { "sampleCount": 1} };
-            const apiKey = ""; // If you want to use models other than imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;
-
-            try {
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                // Check if the response was successful (status code 2xx)
-                if (!response.ok) {
-                    const errorText = await response.text(); // Get error response as text
-                    // More specific error message for 401
-                    if (response.status === 401) {
-                        throw new Error(`Authentication error (Status 401): Please ensure your API key is correctly provided by the environment and is valid.`);
-                    }
-                    throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
-                }
-
-                // Check if the response body is empty before trying to parse JSON
-                const responseText = await response.text();
-                if (!responseText) {
-                    throw new Error('Empty response body from image generation API.');
-                }
-
-                const result = JSON.parse(responseText); // Manually parse to catch SyntaxError more clearly
-
-                if (result.predictions && result.predictions.length > 0 && result.predictions[0].bytesBase64Encoded) {
-                    const imageUrl = `data:image/png;base64,${result.predictions[0].bytesBase64Encoded}`;
-                    labLogo.src = imageUrl;
-                    labLogo.classList.remove('hidden'); // Show logo
-                } else {
-                    console.error('Image generation failed or returned unexpected structure:', result);
-                    // Fallback to a text placeholder if image generation fails
-                    labLogo.src = "https://placehold.co/40x40/ffffff/0f172a?text=Logo";
-                    labLogo.classList.remove('hidden');
-                }
-            } catch (error) {
-                console.error('Error generating image:', error);
-                // Fallback to a text placeholder if there's an error
-                labLogo.src = "https://placehold.co/40x40/ffffff/0f172a?text=Logo";
-                labLogo.classList.remove('hidden');
-                console.error('Error calling Gemini API for logo generation:', error.message || error); // Log the error message
-            } finally {
-                logoSpinner.classList.add('hidden'); // Hide spinner
-            }
-        }
-
-        // Generate logo on page load
-        window.addEventListener('load', () => {
-            generateAndSetLogo();
         });
     </script>
 
